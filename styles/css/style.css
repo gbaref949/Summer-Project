@@ -6,6 +6,7 @@
 
 html,
 body {
+  text-align: center;
   height: 100%;
   width: 100%;
   background-color: #dbdbdb;
@@ -44,10 +45,12 @@ header {
 
 .main-header {
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url("./images/backgrounds/8925910_4025330.jpg");
+  background-image: url("../../images/backgrounds/8925910_4025330.jpg");
+  background: rgb(246, 135, 64);
+  background: radial-gradient(circle, rgb(246, 135, 64) 0%, rgb(179, 230, 242) 80%, rgb(36, 68, 110) 95%, rgb(26, 59, 102) 100%);
   background-blend-mode: color;
   background-size: cover;
-  padding-bottom: 10em;
+  padding-bottom: 12rem;
 }
 
 h1 {
@@ -70,6 +73,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .name {
   text-align: center;
   width: 100%;
@@ -78,6 +86,25 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
   color: rgb(212, 205, 205);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 1em;
 }
 
 footer {

@@ -58,7 +58,19 @@ header {
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.logo{
+    display: inline-flex;
+    position: relative;
+    top: 1.5em;
+}
+
+.moon {
+    display: inline-flex;
+    position: relative;
+    top: 0.45em;
+    left: 0.5em;
 }
 
 // Define the hover state for the main navigation bar links
@@ -68,8 +80,6 @@ header {
 
 // Define the main header
 .main-header {
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url("../../images/backgrounds/8925910_4025330.jpg");
     background: rgb(246, 135, 64);
     background: radial-gradient(circle, rgba(246, 135, 64, 1) 0%, rgba(179, 230, 242, 1) 80%, rgba(36, 68, 110, 1) 95%, rgba(26, 59, 102, 1) 100%);
     background-blend-mode: color;
@@ -141,7 +151,7 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 10px;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
 }

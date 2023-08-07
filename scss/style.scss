@@ -135,6 +135,96 @@ p{
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
+.service {
+    font-family: 'orbitron';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 55vh;
+}
+
+
+
+.serviceContainer {
+    margin-top: 8rem;
+    padding: 0;
+    box-sizing: border-box;
+    // width: 65rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.serviceContainer .serviceBox {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    width: 320px;
+    background-color: rgb(168, 148, 148);
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.serviceContainer .serviceBox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(127, 130, 138);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.serviceContainer .serviceBox:hover:before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.serviceContainer .serviceBox h2 {
+    position: absolute;
+    left: 40px;
+    top: 65px;
+    font-size: 4em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.serviceContainer .serviceBox:hover h2 {
+    opacity: 1;
+    transform: translateY(-40px);
+    color: white;
+}
+
+.serviceContainer .serviceBox h3 {
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+.serviceContainer .serviceBox p {
+    position: relative;
+    font-size: 1.25em;
+    z-index: 2;
+}
+
+.serviceContainer .serviceBox:hover h3,
+.serviceContainer .serviceBox:hover p {
+    color: white;
+
+}
+
 .content-section {
     margin: 1em;
 }

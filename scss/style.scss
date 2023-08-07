@@ -1,5 +1,5 @@
 //import other scss files
-// @import "./partials/another", "./partials/list", "./partials/nav", "./partials/partial", "./partials/utillities", "./partials/reset";
+@import "./partials/footer", "./partials/nav", "./partials/reset", "./partials/utillities";
 
 // $main-color: lightblue;
 // $last-color: $text-color;
@@ -13,9 +13,13 @@
 
 // Set default values for all properties
 * {
-    margin: 0;
-    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1rem;
+    padding: 0.5rem;
     box-sizing: border-box;
+    :root {
+            font-size: 100%;
+        }
 }
 
 // Set the overall look and feel of the page
@@ -24,75 +28,7 @@ body {
     text-align: center;
     height: 100%;
     width: 100%;
-    background-color: #dbdbdb;
     font-family: sans-serif;
-}
-
-// Define the header
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-}
-
-// Define the navigation bar
-.nav {
-    ul {
-        margin: 0;
-    }
-
-    li {
-        display: inline;
-    }
-
-    a {
-        display: inline-block;
-        padding: 0.5em;
-        color: white;
-        text-decoration: none;
-    }
-}
-
-// Define the main navigation bar
-.main-nav {
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
-}
-
-.logo{
-    display: inline-flex;
-    position: relative;
-    border-radius: 100%;
-    top: 1.5em;
-    
-    // box-shadow: inset 0 0 3em #fff, inset 1em 0 2em #f0f, inset -1em 0 2em rgb(140, 0, 255), inset 1em 0 4em #f0f, inset -1em 0 4em rgb(174, 0, 255), 0 0 3em #fff, 0em 0 2em #f0f, 0em 0 2em rgb(162, 0, 255);
-    //     transition: box-shadow 1s ease-out;
-    
-    //     &:hover {
-    //         box-shadow: inset 0 0 10em #fff, inset 1em 0 5em #f0f, inset -1em 0 5em rgb(140, 0, 255), inset 1em 0 10em #f0f, inset -1em 0 10em rgb(174, 0, 255), 0 0 10em #fff, 0em 0 5em #f0f, 0em 0 5em rgb(162, 0, 255);
-    //     }
-}
-
-.moon {
-    display: inline-flex;
-    position: relative;
-    top: 0.45em;
-    left: 0.5em;
-}
-
-// Define the hover state for the main navigation bar links
-.main-nav li:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-
-// Define the main header
-.main-header {
-    background: rgb(246, 135, 64);
-    background: radial-gradient(circle, rgba(246, 135, 64, 1) 0%, rgba(179, 230, 242, 1) 80%, rgba(36, 68, 110, 1) 95%, rgba(26, 59, 102, 1) 100%);
-    background-blend-mode: color;
-    background-size: cover;
-    padding-bottom: 12rem;
 }
 
 // Define the h1 tag
@@ -118,25 +54,8 @@ a {
     color: #fff;
     text-decoration: none;
 }
-p{
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-// Define the .name class
-.name {
-    text-align: center;
-    width: 100%;
-    margin-top: 2em;
-    font-size: 4em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: normal;
-    color: rgb(212, 205, 205);
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-}
 
 .service {
-    font-family: 'orbitron';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -146,10 +65,8 @@ p{
     min-height: 55vh;
 }
 
-
-
 .serviceContainer {
-    margin-top: 8rem;
+    margin-top: 3rem;
     padding: 0;
     box-sizing: border-box;
     // width: 65rem;
@@ -165,10 +82,12 @@ p{
     flex-direction: column;
     box-sizing: border-box;
     position: relative;
+    border-block: none;
     width: 320px;
+    border: none;
     background-color: rgb(168, 148, 148);
     padding: 100px 40px 60px;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px;
 }
 
 .serviceContainer .serviceBox:before {
@@ -243,20 +162,3 @@ p{
     margin-top: 1em;
 
 }
-
-// Define the footer
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    position: static;
-    bottom: 0;
-    width: 100%;
-}
-
-// This is the designs for the footer
-.dark-mode {
-    background-color: #2c2c2c;
-    color: #ffffff;
-}
-// this toggles the dark mode for the pages

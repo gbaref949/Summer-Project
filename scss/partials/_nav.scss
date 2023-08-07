@@ -1,0 +1,77 @@
+// Define the header
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+// Define the navigation bar
+.nav {
+    ul {
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+    }
+
+    a {
+        display: inline-block;
+        padding: 0.5em;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+// Define the main navigation bar
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.logo {
+    display: inline-flex;
+    position: relative;
+    border-radius: 100%;
+    top: 1.5em;
+
+    // box-shadow: inset 0 0 3em #fff, inset 1em 0 2em #f0f, inset -1em 0 2em rgb(140, 0, 255), inset 1em 0 4em #f0f, inset -1em 0 4em rgb(174, 0, 255), 0 0 3em #fff, 0em 0 2em #f0f, 0em 0 2em rgb(162, 0, 255);
+    //     transition: box-shadow 1s ease-out;
+
+    //     &:hover {
+    //         box-shadow: inset 0 0 10em #fff, inset 1em 0 5em #f0f, inset -1em 0 5em rgb(140, 0, 255), inset 1em 0 10em #f0f, inset -1em 0 10em rgb(174, 0, 255), 0 0 10em #fff, 0em 0 5em #f0f, 0em 0 5em rgb(162, 0, 255);
+    //     }
+}
+
+.moon {
+    display: inline-flex;
+    position: relative;
+    top: 0.45em;
+    left: 0.5em;
+}
+
+// Define the hover state for the main navigation bar links
+.main-nav li:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+// Define the main header
+.main-header {
+    background: rgb(246, 135, 64);
+    background: radial-gradient(circle, rgba(246, 135, 64, 1) 0%, rgba(179, 230, 242, 1) 80%, rgba(36, 68, 110, 1) 95%, rgba(26, 59, 102, 1) 100%);
+    background-blend-mode: color;
+    background-size: cover;
+    padding-bottom: 12rem;
+}
+
+// Define the .name class
+.name {
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+    font-size: 4em;
+    font-weight: normal;
+    color: rgb(212, 205, 205);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}

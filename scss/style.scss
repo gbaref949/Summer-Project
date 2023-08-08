@@ -1,5 +1,5 @@
 //import other scss files
-@import "./partials/footer", "./partials/nav", "./partials/reset", "./partials/utillities";
+@import "./partials/footer", "./partials/nav", "./partials/reset", "./partials/slides", "./partials/utillities";
 
 // $main-color: lightblue;
 // $last-color: $text-color;
@@ -82,7 +82,7 @@ a {
     flex-direction: column;
     box-sizing: border-box;
     position: relative;
-    border-block: none;
+    border-radius: 5%;
     width: 320px;
     border: none;
     background-color: rgb(168, 148, 148);
